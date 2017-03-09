@@ -1,10 +1,14 @@
 import React from 'react'
+import Sidebar from '../Sidebar/Sidebar'
+import Content from '../Content/Content'
+import './Plan.css'
 
 const Plan = props => {
   return (
-    <h1>
-      HI from plan
-    </h1>
+    <div className='plan-container'>
+      <Sidebar />
+      <Content />
+    </div>
   )
 }
 

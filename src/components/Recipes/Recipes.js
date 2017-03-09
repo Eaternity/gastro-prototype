@@ -1,10 +1,14 @@
 import React from 'react'
+import Sidebar from '../Sidebar/Sidebar'
+import Content from '../Content/Content'
+import './Recipes.css'
 
 const Recipes = props => {
   return (
-    <h1>
-      HI from recipes
-    </h1>
+    <div className='recipes-container'>
+      <Sidebar />
+      <Content />
+    </div>
   )
 }
 
