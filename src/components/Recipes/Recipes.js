@@ -6,7 +6,10 @@ import './Recipes.css'
 const Recipes = props => {
   return (
     <div className='recipes-container'>
-      <Sidebar />
+      <Sidebar
+        title='recipes'
+        links={links}
+      />
       <Content />
     </div>
   )
