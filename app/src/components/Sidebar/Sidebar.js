@@ -9,8 +9,8 @@ const Sidebar = props => {
         {title}
       </div>
       <div className="sidebar-link-container">
-      		{links.map((link) =>
-   			 <div className="sidebar-link-item">{link}
+      		{links.map((link,id) =>
+   			 <div key={id} className="sidebar-link-item">{link}
       		</div>
   			)}
       </div>

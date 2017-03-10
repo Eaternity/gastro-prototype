@@ -5,8 +5,7 @@ import RecipeLink from '../RecipeLink/RecipeLink'
 import './Recipes.css'
 
 const Recipes = props => {
-  let {recipes} = props
-  recipes = recipes || [
+  let recipes = props.recipes || [
     {name: 'Karotte1', id: '1'},
     {name: 'Karotte2', id: '2'},
     {name: 'Karotte3', id: '3'},
@@ -16,7 +15,9 @@ const Recipes = props => {
     {name: 'Karotte7', id: '7'}
   ]
 
-  const linkItems = recipes.map(recipe => <RecipeLink recipe={recipe} />)
+  const linkItems = recipes
+    .filter(recipe => recipe !== null)
+    .map(recipe => <RecipeLink key={recipe.id} recipe={recipe} />)
 
   return (
     <div className='recipes-container'>

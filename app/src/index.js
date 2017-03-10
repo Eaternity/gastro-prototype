@@ -8,7 +8,7 @@ import './index.css'
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path='/' component={RecipesContainer} />
-    <Route path='recipes' component={RecipesContainer} />
+    <Route path='recipes/:id' component={RecipesContainer} />
     <Route path='plan' component={PlanContainer} />
   </Router>,
   document.getElementById('root')
