@@ -10,8 +10,6 @@ const Recipes = props => {
   recipes = recipes.filter(recipe => recipe !== null)
   const currentRecipe = id ? recipes.filter(r => r.id === id)[0] : ''
 
-  console.log(id)
-
   const linkItems = recipes.map(recipe => {
     const {titles} = recipe
     const name = titles ? titles

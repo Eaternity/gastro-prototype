@@ -5,6 +5,18 @@ import './RecipeBody.css'
 const RecipeHeader = props => {
   const {ingredients, preparation} = props
 
+  const splitPreparation = preparation.split('\n\n')
+
+  const betterPreparation = splitPreparation.map(prep => {
+    return (
+      <div
+        className='preparation'
+        key={prep}>
+        <p>{prep}</p>
+      </div>
+    )
+  })
+
   const renderTableRows = () => {
     return (
       ingredients.map(ingredient => {
@@ -32,7 +44,7 @@ const RecipeHeader = props => {
         {renderTableRows()}
       </Table>
       <h3>Preparation</h3>
-      <p>{preparation}</p>
+      {betterPreparation}
     </div>
   )
 }
