@@ -3,12 +3,13 @@ import {Link} from 'react-router'
 import './RecipeLink.css'
 
 const RecipeLink = props => {
-	const {recipe} = props||{};
-	//TODO: this has errors with promises I don't understand
-	let nameObject = recipe.titles.filter((title)=>{title.language==="de"})[0] || {}
-	
+  const {recipe} = props
+  const {titles} = recipe
+  const name = titles ? titles
+    .filter(title => title.language === 'de')
+    .map(title => title.value)
+    : ''
 
-	name= recipe.titles[0].value ||"no title"
   return (
     <Link to={`/recipes/${recipe.id}`} className='recipe-link'>
       {name}

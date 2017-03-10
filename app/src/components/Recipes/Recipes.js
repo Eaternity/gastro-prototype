@@ -5,8 +5,7 @@ import RecipeLink from '../RecipeLink/RecipeLink'
 import './Recipes.css'
 
 const Recipes = props => {
-  let recipes = props.recipes.length > 0 ? props.recipes.slice(0,20) : [
-  ]
+  const {recipes} = props
 
   const linkItems = recipes
     .filter(recipe => recipe !== null)
@@ -15,10 +14,13 @@ const Recipes = props => {
   return (
     <div className='recipes-container'>
       <Sidebar
+        {...props}
         title='recipes'
         links={linkItems}
       />
-      <Content />
+      <Content
+        {...props}
+        recipes={recipes} />
     </div>
   )
 }

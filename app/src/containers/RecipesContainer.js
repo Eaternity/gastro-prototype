@@ -4,15 +4,14 @@ import api from '../api/api'
 
 class RecipesContainer extends Component {
   state = {
-    recipes: [
-    ]
+    recipes: []
   }
 
   componentDidMount () {
     api.getAllRecipes()
       .then(recipes => {
         this.setState({
-          recipes 
+          recipes
         })
       })
   }
@@ -20,7 +19,7 @@ class RecipesContainer extends Component {
   render() {
     const {recipes} = this.state;
     return (
-      <Recipes recipes={recipes}/>
+      <Recipes {...this.props} recipes={recipes}/>
     )
   }
 }
