@@ -5,7 +5,6 @@ import api from '../api/api'
 class RecipesContainer extends Component {
   state = {
     recipes: [
-      'test'
     ]
   }
 
