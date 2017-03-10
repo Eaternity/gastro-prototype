@@ -1,0 +1,11 @@
+{
+  "name": "mcmunder.de",
+  "alias": "mcmunder.de",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "type": "npm",
+  "engines": {
+    "node": "7.6.0"
+  }
+}
