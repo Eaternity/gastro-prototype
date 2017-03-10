@@ -1,6 +1,8 @@
 .sidebar-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-tems: flex-start;
+  justify-content: flex-start;
   border: 1px solid black;
+  height: 100%;
 }

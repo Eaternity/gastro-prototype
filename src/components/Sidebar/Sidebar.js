@@ -2,11 +2,18 @@ import React from 'react'
 import './Sidebar.css'
 
 const Sidebar = props => {
+	const {title, links} = props;
   return (
     <div className='sidebar-container'>
-      <h1>
-        HI from sidebar
-      </h1>
+      <div className="sidebar-title">
+        {title}
+      </div>
+      <div className="sidebar-link-container">
+      		{links.map((link) =>
+   			 <div className="sidebar-link-item">{link}
+      		</div>
+  			)}
+      </div>
     </div>
   )
 }
