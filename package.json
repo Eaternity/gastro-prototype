@@ -1,7 +1,7 @@
 {
   "name": "gastro-prototype",
   "version": "1.0.0",
-  "description": "gastro-prorotype api",
+  "description": "gastro-prototype api",
   "main": "main.js",
   "repository": "https://github.com/Eaternity/gastro-prototype.git",
   "author": "Matthias Christoph Munder <matthiasmunder@gmail.com>",
@@ -15,7 +15,8 @@
     "start": "NODE_ENV=production node main.js"
   },
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "jsonfile": "^2.4.0"
   },
   "devDependencies": {
     "concurrently": "^3.4.0"

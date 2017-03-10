@@ -259,9 +259,9 @@ range-parser@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
 
-react-lazyload@^2.2.4:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/react-lazyload/-/react-lazyload-2.2.4.tgz#c7bed08405dd00d6bf4196502c7a7fd71b37d721"
+reactable@^0.14.1:
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/reactable/-/reactable-0.14.1.tgz#2ab9895e3df6da2498625de46d3691592d18c93b"
 
 rx@2.3.24:
   version "2.3.24"
