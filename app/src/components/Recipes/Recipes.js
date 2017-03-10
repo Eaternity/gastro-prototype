@@ -9,7 +9,13 @@ const Recipes = props => {
 
   const linkItems = recipes
     .filter(recipe => recipe !== null)
-    .map(recipe => <RecipeLink key={recipe.id} recipe={recipe} />)
+    .map(recipe => {
+      name = recipe.titles ? recipe.titles
+        .filter(title => title.language === 'de')
+        .map(title => title.value)
+        : ''
+      return <RecipeLink name = {name} key={recipe.id} recipe={recipe} />
+    })
 
   return (
     <div className='recipes-container'>
@@ -24,5 +30,4 @@ const Recipes = props => {
     </div>
   )
 }
-
 export default Recipes
