@@ -4,7 +4,6 @@ import './RecipeLink.css'
 
 const RecipeLink = props => {
   const {recipe, name} = props
-
   return (
     <Link to={`/recipes/${recipe.id}`} className='recipe-link'>
       {name}

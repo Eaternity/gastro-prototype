@@ -7,7 +7,7 @@ class RecipesContainer extends Component {
     recipes: []
   }
 
-  componentWillMount () {
+  componentDidMount () {
     api.getAllRecipes()
       .then(recipes => {
         this.setState({

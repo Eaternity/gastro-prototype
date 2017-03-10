@@ -1,6 +1,7 @@
 import React from 'react'
 import foodPorn from './food-porn.png'
 import awardLogo from './award-logo.png'
+import unhappy from './unhappy.jpg'
 import './RecipeHeader.css'
 
 const RecipeHeader = props => {
@@ -9,7 +10,10 @@ const RecipeHeader = props => {
     <div className='recipe-header-container'>
       <div className='recipe-summary-container'>
         <h3>{name}</h3>
-        {award && <img className='logo' src={awardLogo} alt='award-logo' />}
+        {award ?
+          <img className='logo' src={awardLogo} alt='award-logo' /> :
+          <img className='logo' src={unhappy} alt='unhappy-logo' />
+        }
         <br />
         {`CO2-value: ${co2Value}`}
       </div>
