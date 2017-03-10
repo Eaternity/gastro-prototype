@@ -15,9 +15,7 @@
     "start": "NODE_ENV=production node main.js"
   },
   "dependencies": {
-    "express": "^4.15.2",
-    "jsonfile": "^2.4.0",
-    "react-lazyload": "^2.2.4"
+    "express": "^4.15.2"
   },
   "devDependencies": {
     "concurrently": "^3.4.0"

@@ -1,0 +1,23 @@
+.recipe-header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.recipe-summary-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+img {
+  height: 20vh;
+}
+
+.logo {
+  height: 10vh;
+  width: 10vh;
+}

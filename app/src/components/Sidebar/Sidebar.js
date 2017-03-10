@@ -1,5 +1,4 @@
 import React from 'react'
-import Infinite from 'react-infinite'
 
 import './Sidebar.css'
 
@@ -7,7 +6,7 @@ class Sidebar extends React.Component {
   state={
     showLinks: this.props.links
   }
-	
+
    handleChange = (e) => {
     const {links} = this.props
     this.setState({
@@ -17,7 +16,7 @@ class Sidebar extends React.Component {
   render(){
 
     return (
-      
+
       <div className='sidebar-container'>
         <div>
           <input type="text" placeholder="search" onChange={this.handleChange}></input>

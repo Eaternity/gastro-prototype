@@ -1,14 +1,20 @@
 import React from 'react'
+import RecipeHeader from '../RecipeHeader/RecipeHeader'
 import './Content.css'
 
 const Content = props => {
-  const {recipes} = props
-  console.log(props.params)
+  const {currentRecipe} = props
+  const award = currentRecipe ? currentRecipe['eaternity-award'] : ''
+  const co2Value = currentRecipe ? currentRecipe['co2-value'] : ''
+  const name = currentRecipe ? currentRecipe.titles.map(t => t.value) : ''
+
   return (
     <div className='content-container'>
-      <h1>
-        HI from content
-      </h1>
+      <RecipeHeader
+        award={award}
+        name={name}
+        co2Value={co2Value}
+       />
     </div>
   )
 }
