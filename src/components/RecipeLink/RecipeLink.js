@@ -5,7 +5,7 @@ import './RecipeLink.css'
 const RecipeLink = props => {
 	const {recipe} = props;
   return (
-    <Link to={`/recipe/${recipe.id}`} className='recipe-link'>
+    <Link to={`/recipes/${recipe.id}`} className='recipe-link'>
       {recipe.name}
     </Link>
   )
