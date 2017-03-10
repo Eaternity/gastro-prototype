@@ -16,7 +16,8 @@
   },
   "dependencies": {
     "express": "^4.15.2",
-    "jsonfile": "^2.4.0"
+    "jsonfile": "^2.4.0",
+    "react-lazyload": "^2.2.4"
   },
   "devDependencies": {
     "concurrently": "^3.4.0"

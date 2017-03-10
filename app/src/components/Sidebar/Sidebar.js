@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Infinite from 'react-infinite'
 
 import './Sidebar.css'
 
@@ -25,12 +25,14 @@ class Sidebar extends React.Component {
         <div className="sidebar-title">
           {this.props.title}
         </div>
+
         <div className="sidebar-link-container">
         		{this.state.showLinks.map((link,id) =>
      			 <div key={id} className="sidebar-link-item">{link}
         		</div>
     			)}
         </div>
+
       </div>
     )
   }
